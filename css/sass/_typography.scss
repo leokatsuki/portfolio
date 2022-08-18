@@ -81,7 +81,7 @@ h6{
 }
 
 .mask{
-    background: linear-gradient(225deg, #2dc7ed 0%, #538bf0 100% );
+    background: linear-gradient(225deg, #2dc7ed 0%, #538bf0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent ;
 }
@@ -91,7 +91,7 @@ h6{
 }
 
 .text-right{
-    text-align: right;
+    text-align: right ;
 }
 
 .square{
@@ -114,10 +114,10 @@ h6{
 
         z-index: -1;
 
-        width: 120px;
-        height: 120px;
+        width: 96px;
+        height: 96px;
 
-        transform: translate(-5%, -22%) rotate(45deg);
+        transform: translate(0%, -15%) rotate(45deg);
         transition: .5s ease;
 
         border-radius: 4%;
@@ -126,7 +126,7 @@ h6{
 
     &:hover{
         &::after{
-            transform: translate(-5%, -22%) rotate(60deg);
+            transform: translate(0%, -15%) rotate(360deg);
         }
     }
 }
