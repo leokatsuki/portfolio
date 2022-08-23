@@ -84,10 +84,6 @@
     align-items: center;
 }
 
-.svg-hero{
-
-}
-
 @media screen and (max-width: 1200px) {
     .svg-hero{
         transform: scale(1.5) rotate(25deg);
@@ -96,5 +92,82 @@
 @media screen and (max-width: 960px) {
     .svg-hero{
         transform: scale(2) rotate(25deg);
+    }
+}
+
+// WORKS
+.bb-gray{
+    border-bottom: 1px solid $black-light;
+    width: 100%;
+}
+
+.list-item{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+
+    position: relative ;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    a{
+        &:hover{
+            & + .img-project{
+                transform: translate(-50%, -50% ) translate3d(0,0,0);
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.img-project{
+    max-width: 720px;
+    border-radius: 4px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transition: .5s ease;
+    z-index: -1;
+
+    opacity: 0;
+
+    transform: translate(-50%, -50% ) translate3d(-1000px,0,0) skewX(30deg);
+}
+
+
+// CONTACT
+.get{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+}
+
+
+// ANIMATION
+#bg-heroline1{
+    stroke-dasharray: 100 10 !important;
+    animation: linha1 4s linear infinite alternate;
+}
+
+#bg-heroline2{
+    stroke-dasharray: 50 100 !important;
+    animation: linha2 1s ease infinite alternate;
+}
+
+#bg-heroline3{
+    stroke-dasharray: 10 100 !important;
+    animation: linha3 2s linear infinite alternate;
+}
+
+@keyframes linha1{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dashoffset: 1000;
     }
 }
